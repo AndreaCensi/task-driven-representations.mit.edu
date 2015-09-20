@@ -15,17 +15,15 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Task-driven Representations</h1>
-        <p></p>
-
+    <!--     <h1>Task-driven Representations</h1>
+        <p></p> -->
+<!-- 
         <p class="view"><a href="https://github.com/AndreaCensi/task-driven-representations">View the Project on GitHub <small>AndreaCensi/task-driven-representations</small></a></p>
-
-
         <ul>
           <li><a href="https://github.com/AndreaCensi/task-driven-representations/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/AndreaCensi/task-driven-representations/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="https://github.com/AndreaCensi/task-driven-representations">View On <strong>GitHub</strong></a></li>
-        </ul>
+        </ul> -->
       </header>
       <section>
         <h1>
@@ -34,13 +32,17 @@
 <h2>
 <a id="proposed-workshop-for-icra-2016" class="anchor" href="#proposed-workshop-for-icra-2016" aria-hidden="true"><span class="octicon octicon-link"></span></a>Proposed workshop for ICRA 2016</h2>
 
-<p>Organizers: [Andrea Censi (MIT)][censi],  [Stefano Soatto (UCLA)][soatto], [Panagiotis Tsiotras (GATech)][tsiotras]</p>
+<p>Organizers: 
+<a href="http://censi.mit.edu">Andrea Censi</a> (MIT),
+<a href="http://www.cs.ucla.edu/~soatto/">Stefano Soatto</a> (UCLA), 
+<a href="http://soliton.ae.gatech.edu/people/ptsiotra/">Panagiotis Tsiotras</a> (GATech)</p>
 
 <p>Technical Committees endorsements:</p>
 
 <ul>
-<li>RAS Technical Committee on Algorithms for Planning and Control of Robot Motion </li>
-<li>RAS Technical Committee on Computer and Robot Vision</li>
+<li><a href="http://www.robotmotion.org/">RAS Technical Committee on Algorithms for Planning and Control of Robot Motion</a></li>
+<li><a href="http://www.ieee-ras.org/computer-robot-vision">
+RAS Technical Committee on Computer and Robot Vision</a></li>
 </ul>
 
 <p>Duration: full day</p>
@@ -53,10 +55,96 @@
 <p>When computation, memory, or sensing bandwidth are constrained or are associated to a cost, many classical notions must be revised. The most efficient implementation of a behaviorally “optimal” agent does not estimate a belief over the state, but rather it estimates the “minimal representation”, which is the smallest statistic of the observations that is sufficient to perform the task, and is typically much smaller than the full belief. The best sensor is not the one that provides the most bits about the environment, but rather the one whose bits are most “informative” for the task at hand given available resources. If computation has a cost, the best agent aims to achieve “bounded rationality” or “rational inattention”.  </p>
 
 <p>The goal of this workshop is to bring together the researchers in robotics who have been working from many complementary angles on the general issue of designing optimal agents under resources constraints. We would like to understand together which of the competing formalizations are expressive enough to model the resource constraints of a realistic robotic system; which lead to tractable design problems; and whether there is an intersection between the two sets. We also would like to attract researchers in the neighboring fields of computer vision/machine learning and control/identification theory who work on largely equivalent problems.</p>
+
+<h2> Tentative program</h2>
+<style type='text/css'>
+  p.speaker::before { 
+    /*content: "Speaker: ";*/
+  }
+  p.title::before { 
+    /*content: "Title: ";*/
+  }
+  p.speaker A { font-weight: bold !important;}
+  p.title { font-weight: bold; font-family: italic;}
+  p.abstract::before { 
+    content: "Abstract: ";
+  }
+  p.speaker {float: left; clear: both; width: 30%;}
+  p.title {float: left;}
+  p.abstract { clear: both;}
+</style>
+
+
+
+<div class='talk'>
+<p class=speaker><a href="http://www.cc.gatech.edu/~bboots3/">Byron Boots</a> (GaTech)</p>
+<p class=title> Learning Predictive Representations of State</p>
+<p class=abstract> 
+Predictive State Representations (PSRs) are an expressive class of dynamical system models that represent state as a set of predictions of future observable events. In this talk, I will discuss how spectral learning algorithms can be used to learn statistically consistent estimates of PSR parameters by manipulating moments of observed training data. Next I will share recent work where we have generalized PSRs to infinite sets of observations and actions using the concept of Hilbert space embeddings of distributions. The essence of our approach is to represent the predictive state as a nonparametric conditional embedding operator in a Reproducing Kernel Hilbert Space (RKHS). We leverage recent work in kernel methods to estimate, predict, and update the representation. I will show that Hilbert space embeddings of PSRs are able to gracefully handle continuous actions and observations, and that our learned models outperform competing system identification algorithms on several prediction benchmarks as well as real-world robotics problems.
+</p></div>
+<div class='talk'>
+<p class=speaker><a href="http://homes.cs.washington.edu/~fox/">Dieter Fox</a> (UW)</p>
+<p class=title>Model-based and learning-based approaches to perception and control</p>
+<p class=abstract>  
+I will discuss ideas on how model-based approaches to control can be combined with learning-based techniques in a lifelong learning framework.
+</p></div>
+
+<div class='talk'>
+
+<p class=speaker><a href="http://ilab.usc.edu/itti/">Laurent Itti</a> (USC)</p>
+<p class=title>Attention strategies for robotics</p>
+<p class=abstract>
+Visual attention allows primates to rapidly detect potential predators, prey or mates in the environment. Attention thus acts as a rapid heuristic to solving the complex problem of finding these potentially relevant and important items under strong time pressure. Many computational models have been developed to endow machines with a similar heuristic mechanism of attention. These algorithms rely on a rapid and shallow analysis of the incoming sensory data, which, by nature, often yields false positives, but also demonstrates a high hit rate for behaviorally relevant targets, as tested through comparisons of model outputs with eye tracking records from humans and monkeys. Here I will review attention theories and computational models, with a special emphasis on systems-level developments that use attention as part of broader processing pipelines for automated target detection and tracking, robot localization, and autonomous robot navigation.
+</p>
+<div class='talk'>
+<p class=speaker><a href="http://karaman.mit.edu/">Sertac Karaman</a> (MIT)
+</p>
+<p class=title>Compressed Computation for Stochastic Optimal Estimation and Control</p>
+</div>
+
+
+<div class='talk'>
+<p class=speaker><a href="http://www.csc.kth.se/~danik/">Danica Kragic</a> (KTH)
+</p>
+<p class=title>Task-driven representations for grasping and object manipulation
+</p> 
+</div>
+
+
+
+
+<div class='talk'>
+<p class=speaker><a href="http://www.cs.duke.edu/~gdk/">George Konidaris</a> (Duke)</p>
+<p class=title>Robots, Skills, and Symbols</p>
+<p class=abstract>
+Robots are increasingly becoming a part of our daily lives, from the automated vacuum cleaners in our homes to the rovers exploring Mars. However, while recent years have seen dramatic progress in the development of affordable, general-purpose robot hardware, the capabilities of that hardware far exceed our ability to write software to adequately control.
+The key challenge here is one of abstraction. Generally capable behavior requires high-level reasoning and planning, but perception and actuation must ultimately be performed using noisy, high-bandwidth, low-level sensors and effectors. I will describe recent research that uses hierarchical reinforcement learning as a basis for constructing robot control hierarchies through the use of learned motor controllers, or skills. I will present new results establishing a link between the skills available to a robot and the abstract representations it should use to plan with them. I will then show that this representation acquisition phase can be combined with skill acquisition to build true action hierarchies for reinforcement learning problems.
+</p>
+</div>
+ 
+
+<div class='talk'>
+<p class=speaker><a href="http://www.adaptiveagents.org/">Pedro Ortega</a> (UPenn)</p>
+<p class=title> Information-Theoretic Bounded Rationality</p>
+<p class=abstract> 
+In this talk I provide an overview of information-theoretic bounded-rationality for planning in sequential decision problems. I show how to ground the theory on a stochastic computation model for large-scale choice spaces and then derive the free energy functional as the associated variational principle for characterizing bounded-rational decisions. These decision processes have three important properties: they trade off utility and decision complexity;
+they give rise to an equivalence class of behaviourally indistinguishable decision problems; and they possess natural
+stochastic choice algorithms. I will discuss a general class of bounded-rational sequential planning problems that encompasses some well- known classical planning algorithms as limit cases (such as Expectimax and Minimax), as well as trust- and risk-sensitive planning. Finally, I will point out formal connections to Bayesian inference and to regret theory.
+</p>
+
+<div class='talk'>
+<p class=speaker> <a href="http://www.mit.edu/~ttanaka/">Takashi Tanaka</a> (KTH)</p>
+<p class=title>LQG Control with Minimal Information: A Semidefinite Programming Approach</p>
+<p class=abstract> 
+
+ Real-time decision-making procedures in general require continuous acquisition of information from the environment. In this talk, we revisit one of the most fundamental questions in real-time decision-making theory: what is the minimal information acquisition rate to achieve sequential decision-making with desired accuracy? We tackle this question using basic tools from control theory, information theory, and convex optimization theory. Specifically, we consider a Linear-Quadratic-Gaussian (LQG) control problem where Massey's directed information from the state sequence to the control sequence is taken into account. We show that the most "information-frugal" decision-making policy achieving desired LQG control performance admits an attractive three-stage separation structure comprised of (1) a linear sensor with additive Gaussian noise, (2) Kalman filter, and (3) a certainty equivalence controller. We also show that an optimal policy can be synthesized using a numerically efficient algorithm based on semidefinite programming (SDP).
+</p>
+</div>
+
+
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/AndreaCensi">AndreaCensi</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+       
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
