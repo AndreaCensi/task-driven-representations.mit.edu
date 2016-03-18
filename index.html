@@ -56,6 +56,63 @@ RAS Technical Committee on Computer and Robot Vision</a></li>
 
 <p>The goal of this workshop is to bring together the researchers in robotics who have been working from many complementary angles on the general issue of designing optimal agents under resources constraints. We would like to understand together which of the competing formalizations are expressive enough to model the resource constraints of a realistic robotic system; which lead to tractable design problems; and whether there is an intersection between the two sets. We also would like to attract researchers in the neighboring fields of computer vision/machine learning and control/identification theory who work on largely equivalent problems.</p>
 
+<h2> Schedule</h2>
+<table style="width:100%">
+  <col width="15%">
+  <col width="65%">
+  <tr>
+    <td>8:30am-9:00am</td><td>Registration</td>
+  </tr>
+  <tr>
+    <td>9:00am-9:15am</td><td>Opening Remarks</td>
+  </tr>
+  <tr>
+    <td colspan="2">Theme 1:  Task-driven Representations for Embodied Agents </th>    
+  </tr>
+  <tr>
+  <td>9:15am-10:00am</td><td>Danica Kragic - Task-driven representations for grasping and object manipulation</td>
+  </tr>
+  <tr>
+  <td>10:00am-10:45am</td><td>Byron Boots, GaTech  - Learning Predictive Representations of State</td>
+  </tr>
+  <tr>
+  <td>10:45am-11:15am</td><td>Dieter Fox, UW - Model-based and learning-based approaches to perception and control</td>
+  </tr>
+  <tr>
+    <td colspan="2">Theme 2: Minimal Task-Driven Sensing in AI and Control </th>    
+  </tr>
+  <tr>
+  <td>11:15am-11:45am</td><td>George Konidaris, Duke University - Robots, Skills, and Symbols</td>
+  </tr>
+  <tr>
+  <td>11:45am-12:30pm</td><td>Takashi Tanaka, KTH -  LQG Control with Minimal Information: A Semidefinite Programming Approach</td>
+  </tr>
+  <tr>
+    <td colspan="2">Theme 3: Task-driven Representations in Biology </th>    
+  </tr>
+  <tr>
+  <td>1:30pm-2:15pm</td><td>TBA</td>
+  </tr>
+  <tr>
+  <td>2:15pm-3:00pm</td><td>Laurent Itti, USC - Attention strategies for robotics</td>
+  </tr>
+  <tr>
+    <td colspan="2">Theme 4: Resources-Constrained Agents and the Thermodynamics of Information </th>    
+  </tr>
+  <tr>
+  <td>3:15pm-4:00pm</td><td>Sertac Karaman, MIT - Breaking the Curse of Dimensionality with Compressed Computation for Approximately Low-Rank Stochastic Optimal Estimation and Control Problems</td>
+  </tr>
+  <td>4:00pm-4:45pm</td><td>Pedro Ortega, UPenn -  Information theoretic bounded rationality</td>
+  </tr>
+  </tr>
+  <td>4:45pm-6:00pm</td><td>Evangelos Theodorou, GaTech   - Stochastic Control and Inference: From theory to parallel    computation</td>
+  </tr>
+  </tr>
+  <td>6:00pm-6:30pm</td><td>Closing Remarks and Open Q&A Forum</td>
+  </tr>
+</table>
+
+
 <h2> Tentative program</h2>
 <style type='text/css'>
   p.speaker::before { 
@@ -74,7 +131,15 @@ RAS Technical Committee on Computer and Robot Vision</a></li>
   p.abstract { clear: both;}
 </style>
 
-
+<div class='talk'>
+<p class=speaker><a href="http://www.csc.kth.se/~danik/">Danica Kragic</a> (KTH)
+</p>
+<p class=title>Task-driven representations for grasping and object manipulation
+</p>
+<p class=abstract>
+Grasping and manipulation of objects in regular, unstructured environments is an important ability of a service robot. The robot needs to reason about objects, scenes and task requirements and also ground these in sensorimotor information. We present our work on probabilistic models for scene/object representation and task based reasoning. One of the approaches consists of Gaussian mixture models for generic data discretisation and Bayesian networks for encoding task-relevant variables. including object and action features as well as constraints. Another approach uses Predictive State Representation (PSR) that allow for modelling of dynamical systems directly in observables. We overview how PSRs can be extended using prior information to learn representations which are suitable for planning and task interpretation.
+</p>
+</div>
 
 <div class='talk'>
 <p class=speaker><a href="http://www.cc.gatech.edu/~bboots3/">Byron Boots</a> (GaTech)</p>
@@ -82,26 +147,14 @@ RAS Technical Committee on Computer and Robot Vision</a></li>
 <p class=abstract> 
 Predictive State Representations (PSRs) are an expressive class of dynamical system models that represent state as a set of predictions of future observable events. In this talk, I will discuss how spectral learning algorithms can be used to learn statistically consistent estimates of PSR parameters by manipulating moments of observed training data. Next I will share recent work where we have generalized PSRs to infinite sets of observations and actions using the concept of Hilbert space embeddings of distributions. The essence of our approach is to represent the predictive state as a nonparametric conditional embedding operator in a Reproducing Kernel Hilbert Space (RKHS). We leverage recent work in kernel methods to estimate, predict, and update the representation. I will show that Hilbert space embeddings of PSRs are able to gracefully handle continuous actions and observations, and that our learned models outperform competing system identification algorithms on several prediction benchmarks as well as real-world robotics problems.
 </p></div>
+
 <div class='talk'>
 <p class=speaker><a href="http://homes.cs.washington.edu/~fox/">Dieter Fox</a> (UW)</p>
 <p class=title>Model-based and learning-based approaches to perception and control</p>
 <p class=abstract>  
-I will discuss ideas on how model-based approaches to control can be combined with learning-based techniques in a lifelong learning framework.
-</p></div>
-
-<div class='talk'>
-
-<p class=speaker><a href="http://ilab.usc.edu/itti/">Laurent Itti</a> (USC)</p>
-<p class=title>Attention strategies for robotics</p>
-<p class=abstract>
-Visual attention allows primates to rapidly detect potential predators, prey or mates in the environment. Attention thus acts as a rapid heuristic to solving the complex problem of finding these potentially relevant and important items under strong time pressure. Many computational models have been developed to endow machines with a similar heuristic mechanism of attention. These algorithms rely on a rapid and shallow analysis of the incoming sensory data, which, by nature, often yields false positives, but also demonstrates a high hit rate for behaviorally relevant targets, as tested through comparisons of model outputs with eye tracking records from humans and monkeys. Here I will review attention theories and computational models, with a special emphasis on systems-level developments that use attention as part of broader processing pipelines for automated target detection and tracking, robot localization, and autonomous robot navigation.
+Over the last years, deep learning techniques trained on large sets of labeled data have resulted in significant improvements on various perception tasks such as visual recognition, detection, and tracking of objects,  and control tasks such as playing Go, Nintendo games, or pushing an object with a robot manipulator. However, successes in robot control have mostly been in relatively narrow settings. In this talk, I will present some thoughts on the potential benefits of learning-based approaches to robot perception and control, and how they relate to more established, model-based techniques. 
 </p>
-<div class='talk'>
-<p class=speaker><a href="http://karaman.mit.edu/">Sertac Karaman</a> (MIT)
-</p>
-<p class=title>Compressed Computation for Stochastic Optimal Estimation and Control</p>
 </div>
-
 
 <div class='talk'>
 <p class=speaker><a href="http://www.cs.duke.edu/~gdk/">George Konidaris</a> (Duke)</p>
@@ -113,16 +166,24 @@ The key challenge here is one of abstraction. Generally capable behavior require
 </div>
 
 <div class='talk'>
-<p class=speaker><a href="http://www.csc.kth.se/~danik/">Danica Kragic</a> (KTH)
+<p class=speaker> <a href="http://www.mit.edu/~ttanaka/">Takashi Tanaka</a> (KTH)</p>
+<p class=title>LQG Control with Minimal Information: A Semidefinite Programming Approach</p>
+<p class=abstract> 
+Real-time decision-making procedures in general require continuous acquisition of information from the environment. In this talk, we revisit one of the most fundamental questions in real-time decision-making theory: what is the minimal information acquisition rate to achieve sequential decision-making with desired accuracy? We tackle this question using basic tools from control theory, information theory, and convex optimization theory. Specifically, we consider a Linear-Quadratic-Gaussian (LQG) control problem where Massey's directed information from the state sequence to the control sequence is taken into account. We show that the most "information-frugal" decision-making policy achieving desired LQG control performance admits an attractive three-stage separation structure comprised of (1) a linear sensor with additive Gaussian noise, (2) Kalman filter, and (3) a certainty equivalence controller. We also show that an optimal policy can be synthesized using a numerically efficient algorithm based on semidefinite programming (SDP).
 </p>
-<p class=title>Task-driven representations for grasping and object manipulation
-</p> 
 </div>
 
-
-
-
- 
+<div class='talk'>
+<p class=speaker><a href="http://ilab.usc.edu/itti/">Laurent Itti</a> (USC)</p>
+<p class=title>Attention strategies for robotics</p>
+<p class=abstract>
+Visual attention allows primates to rapidly detect potential predators, prey or mates in the environment. Attention thus acts as a rapid heuristic to solving the complex problem of finding these potentially relevant and important items under strong time pressure. Many computational models have been developed to endow machines with a similar heuristic mechanism of attention. These algorithms rely on a rapid and shallow analysis of the incoming sensory data, which, by nature, often yields false positives, but also demonstrates a high hit rate for behaviorally relevant targets, as tested through comparisons of model outputs with eye tracking records from humans and monkeys. Here I will review attention theories and computational models, with a special emphasis on systems-level developments that use attention as part of broader processing pipelines for automated target detection and tracking, robot localization, and autonomous robot navigation.
+</p>
+<div class='talk'>
+<p class=speaker><a href="http://karaman.mit.edu/">Sertac Karaman</a> (MIT)
+</p>
+<p class=title>Compressed Computation for Stochastic Optimal Estimation and Control</p>
+</div>
 
 <div class='talk'>
 <p class=speaker><a href="http://www.adaptiveagents.org/">Pedro Ortega</a> (UPenn)</p>
@@ -134,20 +195,13 @@ stochastic choice algorithms. I will discuss a general class of bounded-rational
 </p>
 
 <div class='talk'>
-<p class=speaker> <a href="http://www.mit.edu/~ttanaka/">Takashi Tanaka</a> (KTH)</p>
-<p class=title>LQG Control with Minimal Information: A Semidefinite Programming Approach</p>
-<p class=abstract> 
-
- Real-time decision-making procedures in general require continuous acquisition of information from the environment. In this talk, we revisit one of the most fundamental questions in real-time decision-making theory: what is the minimal information acquisition rate to achieve sequential decision-making with desired accuracy? We tackle this question using basic tools from control theory, information theory, and convex optimization theory. Specifically, we consider a Linear-Quadratic-Gaussian (LQG) control problem where Massey's directed information from the state sequence to the control sequence is taken into account. We show that the most "information-frugal" decision-making policy achieving desired LQG control performance admits an attractive three-stage separation structure comprised of (1) a linear sensor with additive Gaussian noise, (2) Kalman filter, and (3) a certainty equivalence controller. We also show that an optimal policy can be synthesized using a numerically efficient algorithm based on semidefinite programming (SDP).
-</p>
-</div>
-
-
-
-<div class='talk'>
 <p class=speaker> <a href="http://robotics.gatech.edu/team/faculty/theodorou">Evangelos Theodorou</a> (GaTech)</p>
 <p class=title>Stochastic Control and Inference: From theory to parallel computation</p>
-
+<p class=abstract>
+In this talk I provide an overview of information-theoretic bounded-rationality for planning in sequential decision problems. I show how to ground the theory on a stochastic computation model for large-scale choice spaces and then derive the free energy functional as the associated variational principle for characterizing bounded-rational decisions. These decision processes have three important properties: they trade off utility and decision complexity;
+they give rise to an equivalence class of behaviourally indistinguishable decision problems; and they possess natural
+stochastic choice algorithms. I will discuss a general class of bounded-rational sequential planning problems that encompasses some well- known classical planning algorithms as limit cases (such as Expectimax and Minimax), as well as trust- and risk-sensitive planning. Finally, I will point out formal connections to Bayesian inference and to regret theory.
+</p>
 </div>
 
       </section>
