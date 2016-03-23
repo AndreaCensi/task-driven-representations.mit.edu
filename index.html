@@ -100,7 +100,7 @@ RAS Technical Committee on Computer and Robot Vision</a></li>
     <td colspan="2">Theme 4: Resources-Constrained Agents and the Thermodynamics of Information </th>    
   </tr>
   <tr>
-  <td>3:15pm-4:00pm</td><td>Sertac Karaman, MIT - Breaking the Curse of Dimensionality with Compressed Computation for Approximately Low-Rank Stochastic Optimal Estimation and Control Problems</td>
+  <td>3:15pm-4:00pm</td><td>Sertac Karaman, MIT - Sparsity and Compression for Robot Planning and Perception</td>
   </tr>
   <td>4:00pm-4:45pm</td><td>Pedro Ortega, UPenn -  Information theoretic bounded rationality</td>
   </tr>
@@ -182,7 +182,9 @@ Visual attention allows primates to rapidly detect potential predators, prey or 
 <div class='talk'>
 <p class=speaker><a href="http://karaman.mit.edu/">Sertac Karaman</a> (MIT)
 </p>
-<p class=title>Compressed Computation for Stochastic Optimal Estimation and Control</p>
+<p class=title>Sparsity and Compression for Robot Planning and Perception</p>
+<p class=abstract> 
+Sparsity and compression has attracted a tremendous amount of attention in signal processing during the last decade. It was shown that, signals that are sparse, can be reconstructed with very few measurements, when compared to the (worst-case) fundamental limits established by the Nyquist sampling theorem. In this talk, we apply similar ideas to robot motion planning/control and perception. First, we present a novel computational framework based on compression. Specifically, the new algorithms utilize a novel continuous version of the widely-used tensor decomposition methods to "compress" value functions and efficiently work on their compressed versions. The resulting algorithms efficiently compute exact (arbitrarily good) solutions to stochastic optimal control, estimation, inference, and uncertainty quantification problems. Their run time scales linearly with dimension and polynomially with the rank of the optimal cost-to-go function! In other words, we obtain polynomial time algorithms for "low-rank" problems. These problems suffer from the curse of dimensionality: all known exact algorithms run in time that is exponential with increasing dimensionality of the state space of the system, in the worst case. Second, we present novel algorithms for depth reconstruction with sensors that provide sparse (e.g., very low resolution) measurements. We characterize the conditions under which depth can be recovered from relatively few measurements using l1 minimization techniques. We demonstrate the new algorithms on simulated robots with 10-beam laser range finders for 2D mapping and stereo reconstruction with sparse measurements for 3D sensing.</p>
 </div>
 
 <div class='talk'>
@@ -193,6 +195,7 @@ In this talk I provide an overview of information-theoretic bounded-rationality 
 they give rise to an equivalence class of behaviourally indistinguishable decision problems; and they possess natural
 stochastic choice algorithms. I will discuss a general class of bounded-rational sequential planning problems that encompasses some well- known classical planning algorithms as limit cases (such as Expectimax and Minimax), as well as trust- and risk-sensitive planning. Finally, I will point out formal connections to Bayesian inference and to regret theory.
 </p>
+</div>
 
 <div class='talk'>
 <p class=speaker> <a href="http://robotics.gatech.edu/team/faculty/theodorou">Evangelos Theodorou</a> (GaTech)</p>
