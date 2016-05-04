@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Task-driven Representations by AndreaCensi</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+    <!--     <h1>Task-driven Representations</h1>
+        <p></p> -->
+<!-- 
+        <p class="view"><a href="https://github.com/AndreaCensi/task-driven-representations">View the Project on GitHub <small>AndreaCensi/task-driven-representations</small></a></p>
+        <ul>
+          <li><a href="https://github.com/AndreaCensi/task-driven-representations/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/AndreaCensi/task-driven-representations/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/AndreaCensi/task-driven-representations">View On <strong>GitHub</strong></a></li>
+        </ul> -->
+      </header>
+      <section>
+        <h1>
+<a id="task-driven-perceptual-representations-sensing-planning-and-control-under-resource-constraints" class="anchor" href="#task-driven-perceptual-representations-sensing-planning-and-control-under-resource-constraints" aria-hidden="true"><span class="octicon octicon-link"></span></a>Task-driven Perceptual Representations: Sensing, Planning and Control under Resource Constraints</h1>
+
+<h2>
+<a id="proposed-workshop-for-icra-2016" class="anchor" href="#proposed-workshop-for-icra-2016" aria-hidden="true"><span class="octicon octicon-link"></span></a> ICRA 2016 workshop</h2>
+
+<p>Organizers: 
+<a href="http://censi.mit.edu">Andrea Censi</a> (MIT),
+<a href="http://www.cs.ucla.edu/~soatto/">Stefano Soatto</a> (UCLA), 
+<a href="http://soliton.ae.gatech.edu/people/ptsiotra/">Panagiotis Tsiotras</a> (GATech)</p>
+
+<p>Technical Committees endorsements:</p>
+
+<ul>
+<li><a href="http://www.robotmotion.org/">RAS Technical Committee on Algorithms for Planning and Control of Robot Motion</a></li>
+<li><a href="http://www.ieee-ras.org/computer-robot-vision">
+RAS Technical Committee on Computer and Robot Vision</a></li>
+</ul>
+
+<p>Duration: full day</p>
+
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h2>
+
+<p>Textbook robotics relies on the duality of “inference” vs “control”, or “perception” vs “planning”. These are usually considered distinct problems that can be tackled separately, using the “belief” of the agent as the interface between the two. However, the two become entangled again when computational resources are constrained; this happens either in the regime where the available on-board computational resources are limited (small UAVs, robotic insects), as well as in the regime where environment and sensor data are complex.</p>
+
+<p>When computation, memory, or sensing bandwidth are constrained or are associated to a cost, many classical notions must be revised. The most efficient implementation of a behaviorally “optimal” agent does not estimate a belief over the state, but rather it estimates the “minimal representation”, which is the smallest statistic of the observations that is sufficient to perform the task, and is typically much smaller than the full belief. The best sensor is not the one that provides the most bits about the environment, but rather the one whose bits are most “informative” for the task at hand given available resources. If computation has a cost, the best agent aims to achieve “bounded rationality” or “rational inattention”.  </p>
+
+<p>The goal of this workshop is to bring together the researchers in robotics who have been working from many complementary angles on the general issue of designing optimal agents under resources constraints. We would like to understand together which of the competing formalizations are expressive enough to model the resource constraints of a realistic robotic system; which lead to tractable design problems; and whether there is an intersection between the two sets. We also would like to attract researchers in the neighboring fields of computer vision/machine learning and control/identification theory who work on largely equivalent problems.</p>
+
+<h2> Schedule</h2>
+<table style="width:100%">
+  <col width="15%">
+  <col width="65%">
+  <tr>
+    <td>8:30am-9:00am</td><td>Registration</td>
+  </tr>
+  <tr>
+    <td>9:00am-9:15am</td><td>Opening Remarks</td>
+  </tr>
+  <tr>
+    <td colspan="2">Theme 1:  Task-driven Representations for Embodied Agents </th>    
+  </tr>
+  <tr>
+  <td>9:15am-10:00am</td><td><strong>Byron Boots</strong>, GaTech  - Learning Predictive Representations of State</td>
+  </tr>
+  <tr>
+  <td>10:00am-10:45am</td><td><strong>Dieter Fox</strong>, UW - Model-based and learning-based approaches to perception and control</td>
+  </tr>
+  <tr>
+  <td>10:45am-11:15am</td><td><strong>George Konidaris</strong>, Duke University - Robots, Skills, and Symbols</td>
+  </tr>
+  <tr>
+    <td colspan="2">Theme 2: Minimal Task-Driven Sensing in AI and Control </th>    
+  </tr>
+  <tr>
+  <td>11:15am-11:45am</td><td><strong>Takashi Tanaka</strong>, KTH -  LQG Control with Minimal Information: A Semidefinite Programming Approach</td>
+  </tr>
+  <tr>
+  <td>11:45am-12:30pm</td><td>discussion</td>
+  </tr>
+  <tr>
+    <td colspan="2">Theme 3: Task-driven Representations in Biology </th>    
+  </tr>
+  <tr>
+  <td>1:30pm-2:15pm</td><td><strong>Danica Kragic</strong> - Task-driven representations for grasping and object manipulation</td>
+  </tr>
+  <tr>
+  <td>2:15pm-3:00pm</td><td><strong>Laurent Itti</strong>, USC - Attention strategies for robotics</td>
+  </tr>
+  <tr>
+    <td colspan="2">Theme 4: Resources-Constrained Agents and the Thermodynamics of Information </th>    
+  </tr>
+  <tr>
+  <td>3:15pm-4:00pm</td><td><strong>Sertac Karaman</strong>, MIT - Sparsity and Compression for Robot Planning and Perception</td>
+  </tr>
+  <tr>
+  <td>4:00pm-4:45pm</td><td><strong>Tim Genewein</strong>, Max Planck institute for Intelligent Systems, Tübingen   -  Information-theoretic bounded rationality in perception-actionsystems</td>
+  </tr>
+  </tr>
+  <td>4:45pm-6:00pm</td><td><strong>Evangelos Theodorou</strong>, GaTech   - Fast decision making using parallel stochastic optimal control and inference</td>
+  </tr>
+  </tr>
+  <td>6:00pm-6:30pm</td><td>Closing Remarks and Open Q&A Forum</td>
+  </tr>
+</table>
+
+
+<h2> Abstracts</h2>
+<style type='text/css'>
+  p.speaker::before { 
+    /*content: "Speaker: ";*/
+  }
+  p.title::before { 
+    /*content: "Title: ";*/
+  }
+  p.speaker A { font-weight: bold !important;}
+  p.title { font-weight: bold; font-family: italic;}
+  p.abstract::before { 
+    content: "Abstract: ";
+  }
+  p.speaker {float: left; clear: both; width: 30%;}
+  p.title {float: left;}
+  p.abstract { clear: both;}
+</style>
+
+<div class='talk'>
+<p class=speaker><a href="http://www.csc.kth.se/~danik/">Danica Kragic</a> (KTH)
+</p>
+<p class=title>Task-driven representations for grasping and object manipulation
+</p>
+<p class=abstract>
+Grasping and manipulation of objects in regular, unstructured environments is an important ability of a service robot. The robot needs to reason about objects, scenes and task requirements and also ground these in sensorimotor information. We present our work on probabilistic models for scene/object representation and task based reasoning. One of the approaches consists of Gaussian mixture models for generic data discretisation and Bayesian networks for encoding task-relevant variables. including object and action features as well as constraints. Another approach uses Predictive State Representation (PSR) that allow for modelling of dynamical systems directly in observables. We overview how PSRs can be extended using prior information to learn representations which are suitable for planning and task interpretation.
+</p>
+</div>
+
+<div class='talk'>
+<p class=speaker><a href="http://www.cc.gatech.edu/~bboots3/">Byron Boots</a> (GaTech)</p>
+<p class=title> Learning Predictive Representations of State</p>
+<p class=abstract> 
+Predictive State Representations (PSRs) are an expressive class of dynamical system models that represent state as a set of predictions of future observable events. In this talk, I will discuss how spectral learning algorithms can be used to learn statistically consistent estimates of PSR parameters by manipulating moments of observed training data. Next I will share recent work where we have generalized PSRs to infinite sets of observations and actions using the concept of Hilbert space embeddings of distributions. The essence of our approach is to represent the predictive state as a nonparametric conditional embedding operator in a Reproducing Kernel Hilbert Space (RKHS). We leverage recent work in kernel methods to estimate, predict, and update the representation. I will show that Hilbert space embeddings of PSRs are able to gracefully handle continuous actions and observations, and that our learned models outperform competing system identification algorithms on several prediction benchmarks as well as real-world robotics problems.
+</p></div>
+
+<div class='talk'>
+<p class=speaker><a href="http://homes.cs.washington.edu/~fox/">Dieter Fox</a> (UW)</p>
+<p class=title>Model-based and learning-based approaches to perception and control</p>
+<p class=abstract>  
+Over the last years, deep learning techniques trained on large sets of labeled data have resulted in significant improvements on various perception tasks such as visual recognition, detection, and tracking of objects,  and control tasks such as playing Go, Nintendo games, or pushing an object with a robot manipulator. However, successes in robot control have mostly been in relatively narrow settings. In this talk, I will present some thoughts on the potential benefits of learning-based approaches to robot perception and control, and how they relate to more established, model-based techniques. 
+</p>
+</div>
+
+<div class='talk'>
+<p class=speaker><a href="http://www.cs.duke.edu/~gdk/">George Konidaris</a> (Duke)</p>
+<p class=title>Robots, Skills, and Symbols</p>
+<p class=abstract>
+Robots are increasingly becoming a part of our daily lives, from the automated vacuum cleaners in our homes to the rovers exploring Mars. However, while recent years have seen dramatic progress in the development of affordable, general-purpose robot hardware, the capabilities of that hardware far exceed our ability to write software to adequately control.
+The key challenge here is one of abstraction. Generally capable behavior requires high-level reasoning and planning, but perception and actuation must ultimately be performed using noisy, high-bandwidth, low-level sensors and effectors. I will describe recent research that uses hierarchical reinforcement learning as a basis for constructing robot control hierarchies through the use of learned motor controllers, or skills. I will present new results establishing a link between the skills available to a robot and the abstract representations it should use to plan with them. I will then show that this representation acquisition phase can be combined with skill acquisition to build true action hierarchies for reinforcement learning problems.
+</p>
+</div>
+
+<div class='talk'>
+<p class=speaker> <a href="http://www.mit.edu/~ttanaka/">Takashi Tanaka</a> (KTH)</p>
+<p class=title>LQG Control with Minimal Information: A Semidefinite Programming Approach</p>
+<p class=abstract> 
+Real-time decision-making procedures in general require continuous acquisition of information from the environment. In this talk, we revisit one of the most fundamental questions in real-time decision-making theory: what is the minimal information acquisition rate to achieve sequential decision-making with desired accuracy? We tackle this question using basic tools from control theory, information theory, and convex optimization theory. Specifically, we consider a Linear-Quadratic-Gaussian (LQG) control problem where Massey's directed information from the state sequence to the control sequence is taken into account. We show that the most "information-frugal" decision-making policy achieving desired LQG control performance admits an attractive three-stage separation structure comprised of (1) a linear sensor with additive Gaussian noise, (2) Kalman filter, and (3) a certainty equivalence controller. We also show that an optimal policy can be synthesized using a numerically efficient algorithm based on semidefinite programming (SDP).
+</p>
+</div>
+ 
+<div class='talk'>
+<p class=speaker><a href="http://ilab.usc.edu/itti/">Laurent Itti</a> (USC)</p>
+<p class=title>Attention strategies for robotics</p>
+<p class=abstract>
+Visual attention allows primates to rapidly detect potential predators, prey or mates in the environment. Attention thus acts as a rapid heuristic to solving the complex problem of finding these potentially relevant and important items under strong time pressure. Many computational models have been developed to endow machines with a similar heuristic mechanism of attention. These algorithms rely on a rapid and shallow analysis of the incoming sensory data, which, by nature, often yields false positives, but also demonstrates a high hit rate for behaviorally relevant targets, as tested through comparisons of model outputs with eye tracking records from humans and monkeys. Here I will review attention theories and computational models, with a special emphasis on systems-level developments that use attention as part of broader processing pipelines for automated target detection and tracking, robot localization, and autonomous robot navigation.
+</p>
+<div class='talk'>
+<p class=speaker><a href="http://karaman.mit.edu/">Sertac Karaman</a> (MIT)
+</p>
+<p class=title>Sparsity and Compression for Robot Planning and Perception</p>
+<p class=abstract> 
+Sparsity and compression has attracted a tremendous amount of attention in signal processing during the last decade. It was shown that, signals that are sparse, can be reconstructed with very few measurements, when compared to the (worst-case) fundamental limits established by the Nyquist sampling theorem. In this talk, we apply similar ideas to robot motion planning/control and perception. First, we present a novel computational framework based on compression. Specifically, the new algorithms utilize a novel continuous version of the widely-used tensor decomposition methods to "compress" value functions and efficiently work on their compressed versions. The resulting algorithms efficiently compute exact (arbitrarily good) solutions to stochastic optimal control, estimation, inference, and uncertainty quantification problems. Their run time scales linearly with dimension and polynomially with the rank of the optimal cost-to-go function! In other words, we obtain polynomial time algorithms for "low-rank" problems. These problems suffer from the curse of dimensionality: all known exact algorithms run in time that is exponential with increasing dimensionality of the state space of the system, in the worst case. Second, we present novel algorithms for depth reconstruction with sensors that provide sparse (e.g., very low resolution) measurements. We characterize the conditions under which depth can be recovered from relatively few measurements using l1 minimization techniques. We demonstrate the new algorithms on simulated robots with 10-beam laser range finders for 2D mapping and stereo reconstruction with sparse measurements for 3D sensing.</p>
+</div> 
+
+<div class='talk'>
+<p class=speaker><a href="http://tim.inversetemperature.net/"> Tim Genewein</a> (Max Planck institute for Intelligent Systems, Tübingen)</p>
+<p class=title> Information-theoretic bounded rationality in perception-action
+ systems</p>
+<p class=abstract> 
+The ability to form abstractions and to generalize
+ well from few samples are hallmarks of human and animal intelligence underlying the unrivaled flexibility of behavior in biological systems. Achieving such flexibility in artificial systems is challenging, particularly because the underlying computational
+ principles are not fully understood. This talk introduces an information-theoretic framework for bounded rational decision-making, that is optimal decision-making under limited computational resources. One consequence of acting optimally under computational
+ limitations is the emergence of natural abstractions which allow for more efficient processing of information. The consequent application of the theoretical framework to perception-action systems results in an interesting optimality principle that leads to
+ a tight coupling between perception and action. As a result, the objective of bounded-optimal perception is not to represent a sensory state as faithfully as possible, but rather to extract the most relevant information for bounded-optimal acting.
+</p>
+</div>
+
+<div class='talk'>
+<p class=speaker> <a href="http://robotics.gatech.edu/team/faculty/theodorou">Evangelos Theodorou</a> (GaTech)</p>
+<p class=title>Fast decision making using parallel stochastic optimal control and inference</p>
+<p class=abstract>
+For autonomous systems to operate in stochastic environments, they have to be equipped with fast decision-making processes to reason about the best possible action. Grounded on first principles in stochastic optimal control theory and statistical physics, the path integral control framework provides a mathematically sound methodology for decision making under uncertainty. It also creates opportunities for the development of novel sampling-based planning and control algorithms that are highly parallelizable. In this talk, I will present results in the area of sampling-based adaptive stochastic  control that go beyond classical formulations and show applications to robotics and autonomous systems for tasks such as high-speed navigation and multi-agent control. In addition to sampling-based stochastic trajectory optimization, alternative stochastic control methods that rely on concepts drawn from stochastic mechanics and their implications will be presented.
+</p>
+</div>
+
+      </section>
+      <footer>
+       
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
