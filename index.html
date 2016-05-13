@@ -70,7 +70,7 @@ RAS Technical Committee on Computer and Robot Vision</a></li>
     <!-- <td colspan="2">Theme 1:  Task-driven Representations for Embodied Agents </th>    -->
   </tr>
   <tr>
-  <td>9:15am-10:00am</td><td><strong>Byron Boots</strong>, GaTech  - Learning Predictive Representations of State</td>
+  <td>9:15am-10:00am</td><td><strong>Byron Boots</strong>, GaTech  - Predictive State Inference Machines</td>
   </tr>
   <tr>
   <td>10:00am-10:45am</td><td><strong>Dieter Fox</strong>, UW - Model-based and Learning-based Approaches to Perception and Control</td>
@@ -100,7 +100,7 @@ RAS Technical Committee on Computer and Robot Vision</a></li>
     <!-- <td colspan="2">Theme 4: Resources-Constrained Agents and the Thermodynamics of Information </th>     -->
   </tr>
   <tr>
-  <td>3:00pm-3:45pm</td><td><strong>Sertac Karaman</strong>, MIT - Sparsity and Compression for Robot Planning and Perception</td>
+  <td>3:00pm-3:45pm</td><td><strong><strike>Sertac Karaman</strike></strong>, MIT - <strike>Sparsity and Compression for Robot Planning and Perception</strike></td>
   </tr>
   <tr>
   <td>3:45pm-4:30pm</td><td><strong>Tim Genewein</strong>, Max Planck institute for Intelligent Systems, Tübingen   -  Information-theoretic bounded rationality in perception-actionsystems</td>
@@ -144,9 +144,10 @@ Grasping and manipulation of objects in regular, unstructured environments is an
 
 <div class='talk'>
 <p class=speaker><a href="http://www.cc.gatech.edu/~bboots3/">Byron Boots</a> (GaTech)</p>
-<p class=title> Learning Predictive Representations of State</p>
+<p class=title> Predictive State Inference Machines</p>
 <p class=abstract> 
-Predictive State Representations (PSRs) are an expressive class of dynamical system models that represent state as a set of predictions of future observable events. In this talk, I will discuss how spectral learning algorithms can be used to learn statistically consistent estimates of PSR parameters by manipulating moments of observed training data. Next I will share recent work where we have generalized PSRs to infinite sets of observations and actions using the concept of Hilbert space embeddings of distributions. The essence of our approach is to represent the predictive state as a nonparametric conditional embedding operator in a Reproducing Kernel Hilbert Space (RKHS). We leverage recent work in kernel methods to estimate, predict, and update the representation. I will show that Hilbert space embeddings of PSRs are able to gracefully handle continuous actions and observations, and that our learned models outperform competing system identification algorithms on several prediction benchmarks as well as real-world robotics problems.
+
+Latent state space models are a fundamental and widely used tool for modeling dynamical systems. However, they are difficult to learn from data and learned models often lack performance guarantees on tasks such as filtering and prediction. In this talk, I will introduce Predictive State Inference Machines (PSIM), a framework that considers the inference procedure on the dynamical system as a composition of predictors. The key idea behind PSIM is that rather than focusing on learning a latent state space model, which could then be used for inference, one should develop a learning algorithm that considers the inference task directly. PSIM accomplishes this by learning predictors for inference in predictive state space, where sufficient features of observations can be used for supervision. We provide theoretical guarantees for our approach, in both realizable and agnostic settings, and showcase practical performance on a variety of simulated and real world robotics benchmarks. 
 </p></div>
 
 <div class='talk'>
